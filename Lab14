@@ -1,0 +1,23 @@
+Data Modeling
+Jest to proces definiowania zawartości danych i ich struktury. Odbywa się to na trzech poziomach. Pierwszy poziom to model pojęciowy,
+który jest opisem struktury, zawartości i przeznaczenia hurtowni danych na poziomie pojęciowym, tzn. z punktu widzenia celów biznesowych. 
+Następnie tworzony jest model logiczny który odwołuje się do elementów logicznych baz danych takich jak np. tablice, relacje. 
+Przypomina on typowy projekt bazy danych wykonany np. w języku UML. Ostatni model to model fizyczny.
+Jest to opis parametrów mających na celu optymalizację działania hurtowni, takich jak np. indeksowanie, partycjonowanie. 
+
+normalizacja
+Normalizacja to proces organizowania danych w bazie danych. Zapewnia większą elastyczność bazy danych przez wyeliminowanie nadmiarowości i 
+niespójnych zależności. Istnieje kilka reguł normalizacji bazy danych. Każda reguła jest nazywana „postacią normalną”.
+
+denormalizacja
+Denormalizacja to również metoda stosowana w bazach danych. Jest to technika łączenia danych w celu szybkiego wykonania zapytania. 
+Dzięki zastosowaniu denormalizacji zmniejsza się liczba tabel, co jest przeciwne normalizacji.
+
+Data mart - tematyczna hurtownia danych
+Hurtownie tematyczne stanowią wydzielone i przetworzone podzbiory danych, przeznaczone do konkretnych rodzajów analiz. 
+Przykładowe zastosowanie hurtowni tematycznych to OLAP. 
+
+OLAP 
+Struktura danych, która pozwala na szybką analizę danych. Przechowuje ona dane w sposób bardziej przypominający wielowymiarowe arkusze kalkulacyjne niż tradycyjną,
+relacyjną bazę danych. Każda kostka składa się z wymiarów i miar, czyli analizowanych wartości. Operacje które można 
+wykonać na kostce to np. zwijanie (agregacja), projekcja (zmniejszenie liczby wymiarów), sortowanie (tworzenie rankingów). 
